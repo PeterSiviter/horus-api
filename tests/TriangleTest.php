@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Shapes;
+namespace App\Tests;
 
+use App\Shapes\Triangle;
 use PHPUnit\Framework\TestCase;
 
 class TriangleTest extends TestCase
