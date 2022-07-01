@@ -2,21 +2,30 @@
 
 namespace App\Controller;
 
+use App\Shapes\Triangle;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
 class TriangleController extends AbstractController
 {
-    #[Route('/triangle/{depth}/{width}/{height}', name: 'app_triangle')]
-    public function index($depth, $width, $height): JsonResponse
+    /**
+     * @param $a
+     * @param $b
+     * @param $c
+     * @return JsonResponse
+     */
+    #[Route('/triangle/{a}/{b}/{c}', name: 'app_triangle')]
+    public function index($a, $b, $c): JsonResponse
     {
+        $t = new Triangle($a, $b, $c);
         return $this->json([
-            'message' => 'Data received OK',
-            'path' => 'src/Controller/TriangleController.php',
-            '$depth' => $depth,
-            '$width' => $width,
-            '$height' => $height,
+            'type' => 'triangle',
+            'a' => $t->getA(),
+            'b' => $t->getB(),
+            'c' => $t->getC(),
+            'surface' => $t->area(),
+            'circumference(perimiter)' => $t->circumference(),
         ]);
     }
 }
