@@ -31,12 +31,12 @@ Output: -
 Output: -
 ```
 {
-"type": "triangle",
-"a": 22,
-"b": 21,
-"c": 19,
-"surface": 182.97540818372286,
-"circumference(perimiter)": 62
+	"type": "triangle",
+	"a": 22,
+	"b": 21,
+	"c": 19,
+	"surface": 182.97540818372286,
+	"circumference(perimiter)": 62
 }
 ```
 
@@ -55,9 +55,9 @@ so I only sum circles in the method.
 Output: -
 ```
 {
-"type1": "circle",
-"type2": "triangle",
-"area": 182.97540818372286,
-"diameter": 20
+	"type1": "circle",
+	"type2": "triangle",
+	"area": 182.97540818372286,
+	"diameter": 20
 }
 ```
