@@ -40,8 +40,8 @@ class GeometryController extends AbstractController
         return $this->json([
             'type1' => 'circle',
             'type2' => 'triangle',
-            'area' => $totalArea,
-            'diameter' => $totalDiameter,
+            'area_total' => $totalArea,
+            'diameter_total' => $totalDiameter,
         ]);
     }
 }

@@ -57,7 +57,7 @@ Output: -
 {
 	"type1": "circle",
 	"type2": "triangle",
-	"area": 182.97540818372286,
-	"diameter": 20
+	"area_total": 208.1081494124412,
+	"diameter_total": 20
 }
 ```
